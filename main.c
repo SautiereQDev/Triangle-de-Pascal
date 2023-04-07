@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
+//utilisation de tableau à double entrée
 void triangle_pascal(int (*tab)[10], unsigned taille)
 {
     tab[0][0] = 1;
@@ -40,7 +40,7 @@ int main(void)
     unsigned taille;
 
     printf("Taille du triangle: ");
-
+//gestion des erreurs d'entrée
     if (scanf("%u", &taille) != 1)
     {
         printf("Mauvaise saisie\n");
